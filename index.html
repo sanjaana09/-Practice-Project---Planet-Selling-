@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Shop</title>
+    <style>
+      
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');     
+         *{
+            margin: 0 ;
+            padding: 0 ;
+            box-sizing: border-box ;
+            font-weight:  bold ;
+            color: white ;
+        }
+        body{
+            font-family:'Montserrat Subrayada', sans-serif; 
+            
+             background-color: #2c2c2c;
+        }
+        header {
+             height: 70px;
+             /*  div and ul same line me aa jayenge  */
+             display: flex;
+             justify-content: space-around;
+             align-items: center;
+             border-bottom: 1px solid black;
+
+        }
+        ul {
+            /* isse sare one line me aa jayenge  */
+            display: flex ;
+            /* isse dots remove honge  */
+            list-style-type: none ;
+        }
+
+        ul li a {
+            margin: 0 5px ;
+            border: 2px solid white;
+            padding: 0px 10px;
+            text-decoration: none;
+            /* isseround ho jaayega  */
+            border-radius: 50px; 
+
+        }
+        .logo {
+            border:2px solid white ;
+          /* 10px uppr niche se 5px left right se  */
+            padding: 10px 5px;
+        }
+        .signup {
+            background-color: white;
+            color: black;
+
+        }
+        .signup:hover {
+            background-color: black ;
+            color: white;
+        }
+        main {
+            display: flex;
+            height: 90vh;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0px 150px;
+            /* The CSS flex-wrap property is used to specify whether flex items are forced into a single line or wrapped onto multiple lines. The flex-wrap property enables the control direction in which lines are stacked. It is used to designate a single-line or multi-line format to flex items inside the flex container. */
+            flex-wrap: wrap ;
+        }
+
+        main h2 {
+              font-size: 30px ;
+              text-transform: uppercase ;
+              
+        }
+        main p {
+            font-size: 14px ;
+            font-weight: 200;
+            line-height: 31.5px ;
+            margin: 30px 0px ;
+
+        }
+        /*  flex property work on particular div  */
+        /* FLex ne screen ko 4 parts me divide kr diya */
+        .contentLeft {
+            flex : 1 ;
+        }
+        .contentmid {
+            flex : 2;
+        }
+        .contentRight {
+            flex : 1 ;
+        }
+        .merc {
+             max-width: 500px;
+             /* height apne hisab se auto chnge hogi */
+             height: auto ;
+             
+        }
+        .btn {
+            padding: 15px 30px ;
+            background: white;
+            outline: none;
+            border: none ;
+            color: black;
+            border-radius: 50px;
+            font-weight: 700px ;
+
+        }
+        .btn:hover {
+              background-color:#2c2c2c ;
+              color: white;
+              border: 2px solid white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <nav>
+            <ul>
+                <!-- # -- from this  Home become clickable -->
+                <li ><a href="#"> HOME </a></li>
+                <li ><a href="#"> OFFERS </a></li>
+                <li ><a href="#"> BUY NOW </a></li>
+                <li ><a href="#"> SELL NOW</a></li>
+                <li ><a href="#"> ABOUT US </a></li>
+                <li ><a href="#" class="signup"> SIGN UP </a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main> 
+        <div class="contentLeft">
+            <h2>MERCURY</h2>
+        </div>
+        <div class="contentmid">
+            <p>Mercury, the innermost planet of the solar system and the eighth in size and mass. Its closeness to the Sun and its smallness make it the most elusive of the planets visible to the unaided eye. Because its rising or setting is always within about two hours of the Sun’s, it is never observable when the sky is fully dark. Mercury is designated by the symbol ☿. <br>
+                Mercury is the closest planet to the Sun, at a distance of 57.91 million kilometers / 35.98 miles or 0.4 AU away. It takes sunlight 3.2 minutes to travel from the Sun to Mercury.
+            </p>
+            <button class="btn">BUY NOW</button>
+        </div>
+        <div class="contentRight"><img src="About.png" class="merc">
+
+        </div>
+
+    </main>
+</body>
+</html>
